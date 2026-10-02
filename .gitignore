@@ -1,0 +1,42 @@
+# Generated profiles contain local paths, device serials, and copied OBS settings.
+build/
+build-info.json
+
+# Local configuration, credentials, and agent state.
+.agents/
+.codex/
+.aws/
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# Captures and machine-specific diagnostics.
+captures/
+screenshots/
+recordings/
+logs/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.wav
+*.mp3
+*.log
+*.core
+
+# Local backups and Python caches.
+backups/
+*.bak
+*.seefix-tmp
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store

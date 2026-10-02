@@ -1,0 +1,232 @@
+{
+  "keys": {
+    "0x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Starting"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Starting"
+            }
+          }
+        }
+      }
+    },
+    "1x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Full"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Full"
+            }
+          }
+        }
+      }
+    },
+    "2x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Full with Nerve"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Full with Nerve"
+            }
+          }
+        }
+      }
+    },
+    "3x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Screen Cap"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Screen Cap"
+            }
+          }
+        }
+      }
+    },
+    "0x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Break"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Break"
+            }
+          }
+        }
+      }
+    },
+    "1x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Ending Cam"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Ending Cam"
+            }
+          }
+        }
+      }
+    },
+    "2x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Ending Reel"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Ending Reel"
+            }
+          }
+        }
+      }
+    },
+    "3x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::SwitchScene",
+              "settings": {
+                "scene": "Multi"
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Multi"
+            }
+          }
+        }
+      }
+    }
+  },
+  "dials": {
+    "0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::InputDial",
+              "settings": {
+                "input": "Mic/Aux",
+                "live_meter": true
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Mic"
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::InputDial",
+              "settings": {
+                "input": "Desktop Audio",
+                "live_meter": true
+              }
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Desktop"
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::ToggleStream",
+              "settings": {}
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Stream"
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OBSPlugin::ToggleRecord",
+              "settings": {}
+            }
+          ],
+          "labels": {
+            "bottom": {
+              "text": "Record"
+            }
+          }
+        }
+      }
+    }
+  }
+}

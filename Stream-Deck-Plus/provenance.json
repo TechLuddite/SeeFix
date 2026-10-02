@@ -1,0 +1,34 @@
+{
+  "device": "Elgato Stream Deck Plus",
+  "usb_id": "0fd9:0084",
+  "buttons": 8,
+  "dials": 4,
+  "button_image_size": [
+    120,
+    120
+  ],
+  "touchscreen_image_size": [
+    800,
+    100
+  ],
+  "tested_streamcontroller": "1.5.0-beta.15",
+  "platform": "Omarchy / Hyprland (Lua configuration), Wayland",
+  "upstream_plugins": [
+    {
+      "id": "com_core447_OSPlugin",
+      "url": "https://github.com/StreamController/OSPlugin",
+      "commit": "b7c719b2ec7e9424cf182d7682c3189772f4dbd2"
+    },
+    {
+      "id": "com_core447_DeckPlugin",
+      "url": "https://github.com/StreamController/DeckPlugin",
+      "commit": "14924f3b54e4f68117f26b8ae8d55d83956fb805"
+    },
+    {
+      "id": "com_core447_OBSPlugin",
+      "url": "https://github.com/oparada1988/OBSPlugin",
+      "tested_plugin_version": "1.0.5",
+      "local_patch": "patches/obs-meter-redraw.patch"
+    }
+  ]
+}

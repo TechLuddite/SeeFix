@@ -1,0 +1,10 @@
+--- a/actions/InputDial/InputDial.py
++++ b/actions/InputDial/InputDial.py
+@@ -172,4 +172,6 @@
+         state = (volume, muted, x_fill, is_live, bar_color)
+-        if getattr(self, "_last_state", None) == state:
++        input_state = self.get_state()
++        rendered_image = getattr(input_state, "image" if is_dial else "key_image", None)
++        if getattr(self, "_last_state", None) == state and rendered_image is not None:
+             return None
+         self._last_state = state

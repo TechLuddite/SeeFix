@@ -1,0 +1,915 @@
+{
+  "keys": {
+    "0x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    28,
+                    1
+                  ],
+                  [
+                    28,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/terminal.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Terminal",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "1x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    42,
+                    1
+                  ],
+                  [
+                    48,
+                    1
+                  ],
+                  [
+                    48,
+                    0
+                  ],
+                  [
+                    42,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/browser.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Browser",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "2x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    42,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    33,
+                    0
+                  ],
+                  [
+                    42,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/files.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Files",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "3x0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    99,
+                    1
+                  ],
+                  [
+                    99,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/screenshot.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Screenshot",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "0x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::RunCommand",
+              "settings": {
+                "command": "omarchy screenrecord --fullscreen --with-desktop-audio",
+                "detached": true,
+                "display_output": false
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::RunCommand",
+              "settings": {
+                "command": "if pgrep -f '^gpu-screen-recorder' >/dev/null; then printf 'STOP REC'; else printf 'Record'; fi",
+                "detached": false,
+                "display_output": true,
+                "label_position": "bottom",
+                "auto_run": 1
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/record.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": null,
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0,
+          "label-control-actions": [
+            null,
+            null,
+            1
+          ]
+        }
+      }
+    },
+    "1x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    42,
+                    1
+                  ],
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    42,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/previous.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Prev Space",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "2x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/next.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Next Space",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "3x1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    164,
+                    1
+                  ],
+                  [
+                    164,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/media.svg",
+            "size": 1,
+            "valign": 0,
+            "halign": 0
+          },
+          "labels": {
+            "bottom": {
+              "text": "Play / Pause",
+              "font-family": "Liberation Sans",
+              "font-size": 14,
+              "color": [
+                238,
+                242,
+                255,
+                255
+              ],
+              "outline_width": 0
+            }
+          },
+          "image-control-action": 0
+        }
+      }
+    }
+  },
+  "dials": {
+    "0": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    115,
+                    1
+                  ],
+                  [
+                    115,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": "Key Down",
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    114,
+                    1
+                  ],
+                  [
+                    114,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": "Key Down",
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    113,
+                    1
+                  ],
+                  [
+                    113,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": "Key Down",
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": "Key Down",
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/dial-0.svg",
+            "size": 1
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "1": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    163,
+                    1
+                  ],
+                  [
+                    163,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": "Key Down",
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    165,
+                    1
+                  ],
+                  [
+                    165,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": "Key Down",
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    164,
+                    1
+                  ],
+                  [
+                    164,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": "Key Down",
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": "Key Down",
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/dial-1.svg",
+            "size": 1
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "2": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": "Key Down",
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    42,
+                    1
+                  ],
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    42,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": "Key Down",
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            },
+            {
+              "id": "com_core447_OSPlugin::Hotkey",
+              "settings": {
+                "keys": [
+                  [
+                    125,
+                    1
+                  ],
+                  [
+                    29,
+                    1
+                  ],
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    29,
+                    0
+                  ],
+                  [
+                    125,
+                    0
+                  ]
+                ],
+                "delay": 0.02
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": "Key Down",
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": "Key Down",
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/dial-2.svg",
+            "size": 1
+          },
+          "image-control-action": 0
+        }
+      }
+    },
+    "3": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_DeckPlugin::ChangePage",
+              "settings": {
+                "selected_page": "{{STREAMCONTROLLER_DATA}}/pages/Stream.json",
+                "deck_number": "{{DECK_SERIAL}}",
+                "return_timeout": 0
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": "Key Down",
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": "Key Down",
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": null,
+                "Touchscreen Drag Right": null
+              }
+            }
+          ],
+          "media": {
+            "path": "{{STREAMCONTROLLER_DATA}}/Assets/StreamDeckIcons/dial-3.svg",
+            "size": 1
+          },
+          "image-control-action": 0
+        }
+      }
+    }
+  },
+  "touchscreens": {
+    "sd-plus": {
+      "states": {
+        "0": {
+          "actions": [
+            {
+              "id": "com_core447_DeckPlugin::ChangePage",
+              "settings": {
+                "selected_page": "{{STREAMCONTROLLER_DATA}}/pages/Stream.json",
+                "deck_number": "{{DECK_SERIAL}}",
+                "return_timeout": 0
+              },
+              "event-assignments": {
+                "Key Down": null,
+                "Key Up": null,
+                "Key Short Up": null,
+                "Key Hold Start": null,
+                "Key Hold Stop": null,
+                "Dial Down": null,
+                "Dial Up": null,
+                "Dial Short Up": null,
+                "Dial Hold Start": null,
+                "Dial Hold Stop": null,
+                "Dial Turn CW": null,
+                "Dial Turn CCW": null,
+                "Dial Touchscreen Short Press": null,
+                "Dial Touchscreen Long Press": null,
+                "Touchscreen Drag Left": "Key Down",
+                "Touchscreen Drag Right": "Key Down"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
