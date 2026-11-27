@@ -56,8 +56,11 @@ Install the official plugins through StreamController first. References:
 [OS](https://github.com/StreamController/OSPlugin),
 [Deck](https://github.com/StreamController/DeckPlugin),
 [tested OBS fork](https://github.com/oparada1988/OBSPlugin).
-They are referenced here rather than redistributed. Their upstream licenses apply
-to their source and modifications; no overall project license has been selected.
+They are referenced here rather than redistributed, and their upstream licenses
+apply to their source. This project is MIT licensed, see [LICENSE](../LICENSE),
+with one exception: `patches/obs-meter-redraw.patch` changes the OBS plugin,
+which is GPL-3.0, and includes lines of it as context, so that patch is offered
+under GPL-3.0.
 
 From this directory, build a preview using the serial shown by StreamController:
 
